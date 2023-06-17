@@ -1,0 +1,191 @@
+﻿html, body {
+	background-color: #91BDDF;
+	color: #000;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+nav {
+	width: 20%;
+	float: right;
+	padding: 1%;
+	overflow: hidden;
+}
+	nav ul li {
+		list-style-type: none;
+		padding: 0 0 0 0px;
+		color: darkslategray;
+		text-align: center;
+	}
+footer {
+	height: 50px;
+	background: #5B9BBE;
+	color: #000;
+	text-align: center;
+	margin-top: 10px;
+	padding: 5px;
+}
+header {
+	padding-left: 20%;
+	border-radius: 6px;
+	height: 50px;
+	background: #5B9BBE;
+	margin: 0 0 10px 30px;
+	text-align: center;
+}
+nav ul li a.active {
+	color: #5B9BBE;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
+	width: 200px;
+	box-shadow: 0 6px 6px -6px #666;
+	border-radius: 6px;
+}
+ul li {
+	border-radius: 6px;
+	}
+ul li:first-child {
+	border-top: none;
+}
+
+	ul li a {
+		display: block;
+		text-decoration: none;
+		background-color: #EEE;
+		padding: 3px;
+		font-size: 18px;
+		border: 1px solid #FFF;
+		text-align: center;
+		background-image: url('tlo_menu.png');
+		background-repeat: repeat-x;
+		background-image: radial-gradient(ellipse at bottom, #FFF 0%, #DDD 100%);
+		color: #000;
+		border-radius: 6px;
+	}
+a {
+	text-decoration: none;
+}
+ul li a:hover {
+	color: #000;
+	background-image: none;
+	background-color: #FFF;
+}
+#content {
+	border-radius: 6px;
+	width: 70%;
+	background: #C0C0C0;
+	float: right;
+	padding: 3%;
+	overflow: hidden;
+	text-align: left;
+}
+#wrapper {
+	width:95%;
+	overflow:hidden;
+	margin:0 auto;
+	min-height:calc(100% - 52px);
+	padding:1%;
+}
+
+h1, h2, h3 {
+	color: #083033;
+}
+
+p#styl1:before {
+	content: "Czołowi producenci na rynku: ";
+}
+h2#styl2 {
+	color: green;
+}
+.left {
+	float: left;
+}
+
+img:hover {
+	opacity: 0.2;
+	cursor: pointer;
+	border: none;
+}
+
+img {
+	padding: 2%;
+	margin: 0px 10px 0px 0px;
+	width: 20%;   /*było width: auto*/
+	height: auto;
+	box-shadow: 0 0 5px black inset;
+}
+
+table {
+	border: 5px black;
+	border-style: dotted;
+	padding: 2%;
+	border-width: thin;
+}
+
+th {
+	border: 1px solid black;
+}
+td {
+	border: 1px solid black;
+	text-align: left;
+}
+
+.go-top {
+	position: fixed;
+	bottom: 10px;
+	left: 60px;
+	font-size: 18px;
+	color: #083033;
+	margin: 0px 30px 0px 20px;
+}
+.ped {
+	font-size: 18px;
+	color: #083033;
+}
+#zegar {
+	float: left;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 30px;
+	text-align: center;
+	padding: 1%;
+	margin: 0px 0px 0px 50px;
+}
+
+
+@media only screen and (max-width: 900px) {
+   nav {width:88%; position:absolute; height:500px; margin-top:5%}
+   nav ul li {display: inline; }
+   header {height: 80px; margin-left:2%; margin-right:2%}
+   #content {width: 94%;position:relative; top: 500px;margin-top:2%; margin-bottom:5%; height:3750px; padding:3%}
+   #zegar {position:absolute; top: 570px}
+   img {max-width:95%; height:auto; padding:2%}
+}
+
+#blok {
+	position: relative;
+	width: 700px;
+	height: 40px;
+	line-height: 2.2em;
+	margin: 0 auto;
+	border: 2px solid #DDD;
+	font-size: 18px;
+	background-color: #EEE;
+	overflow: hidden;
+}
+
+	#blok > p {
+		position: absolute;
+		margin: 0;
+		white-space: nowrap;
+		animation: przesun 20s linear infinite;
+	}
+
+@keyframes przesun
+{
+  0% { transform:translateX(0); padding-left:110%; }
+  100% { transform:translateX(-100%); padding-left:110%; }
+}
