@@ -1,0 +1,223 @@
+﻿html, body {
+	background-color: #91BDDF;
+	color: #000;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+nav {
+	width:20%;
+	float:right;
+	padding:1%;
+	overflow:hidden;
+}
+	nav ul li {
+		list-style-type: none;
+		padding: 0 0 0 0px;
+		color: darkslategray;
+		text-align: center;
+	}
+footer {
+	height: 50px;
+	background: #5B9BBE;
+	color: #000;
+	text-align: center;
+	margin-top: 10px;
+	padding: 5px;
+	bottom: 0;
+	width: 100%;
+}
+
+header {
+	padding-left: 20%;
+	border-radius: 6px;
+	height: 50px;
+	background: #5B9BBE;
+	margin: 0 0 10px 30px;
+	text-align: center;
+}
+nav ul li a.active {
+	color: #5B9BBE;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
+	width: 200px;
+	box-shadow: 0 6px 6px -6px #666;
+	border-radius: 6px;
+}
+	ul li {
+		border-radius: 6px;
+	}
+
+		ul li:first-child {
+			border-top: none;
+		}
+		ul li a {
+			display: block;
+			text-decoration: none;
+			background-color: #EEE;
+			padding: 3px;
+			font-size: 18px;
+			border: 1px solid #FFF;
+			text-align: center;
+			background-image: url('tlo_menu.png');
+			background-repeat: repeat-x;
+			background-image: radial-gradient(ellipse at bottom, #FFF 0%, #DDD 100%);
+			color: #000;
+			border-radius: 6px;
+		}
+
+a {
+	text-decoration: none;
+}
+
+	a#styl {
+		color: #000;
+		border-radius: 6px;
+		text-decoration: none;
+		text-decoration: none;
+		padding: 4px;
+		text-align: center;
+		background-image: radial-gradient(ellipse at bottom, #FFF 0%, #DDD 100%);
+	}
+ul li a:hover {
+	color: #000;
+	background-image: none;
+	background-color: #FFF;
+}
+
+
+#content {
+	border-radius: 6px;
+	width: 70%;
+	background: #C0C0C0;
+	float: right;
+	padding: 3%;
+	overflow: hidden;
+	text-align: center;
+}
+#in_content {
+	padding: 3%;
+	margin-right: 30%;
+	text-align: right;
+}
+#wrapper {
+	width:95%;
+	overflow:hidden;
+	margin:0 auto;
+	min-height:calc(100% - 52px);
+	padding:1%;
+}
+
+h1, h2, h3 {
+	color: #083033;
+}
+
+.left {
+	float: left;
+}
+
+img:hover {
+	opacity: 0.2;
+	cursor: pointer;
+}
+
+.go-top {
+	position: fixed;
+	bottom: 10px;
+	left: 60px;
+	font-size: 18px;
+	color: #083033;
+	margin: 0px 30px 0px 20px;
+}
+
+input[type=text], input[type=password] {
+	border-radius: 6px;
+	padding: 12px 20px;
+	margin: 8px 8px;
+	box-sizing: border-box;
+	width: 250px;
+	height: 30px;
+}
+
+input[type=button], input[type=submit], input[type=reset] input[type=file] {
+	border-radius: 6px;
+	background-color: #4D7FB1;
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	text-decoration: none;
+	margin: 10px 2px;
+	cursor: pointer;
+}
+fieldset{
+	max-width:100%; height:auto; margin-left:2%
+}
+
+
+table {	
+	border-collapse: collapse;
+	border: 1px solid #778899;
+	width: 100%;
+	margin: 10px 0px;
+}
+
+table td, table th {
+	padding: 5px;
+}
+
+table tbody td, table th {
+    border: 1px solid #778899;
+}
+
+table tbody td[colspan] {
+    text-align: center;
+}
+
+table tfoot td:last-child {
+    text-align: center;
+}
+
+form label {
+	display: block;
+	margin: 10px 10px 10px 0px;
+	width: auto;
+}
+
+
+textarea {
+	width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+	nav {width:88%; position:absolute; height:360px;margin-top:5%}
+   nav ul li {display: inline; }
+   header {height: 50px; margin-left:2%; margin-right:2%}
+   #content {width: 94%;position:relative; top: 400px;margin-top:5%; margin-bottom:5%; height:1200px; text-align:left}
+   #zegar {position:absolute; top: 620px}
+   img {max-width:95%; height:auto; margin-left:2%}
+   fieldset {max-width:40%; height:auto; margin-left:2%}
+	textarea {width:20%}
+}
+
+ /* Pagination links */
+.pagination a {
+  color: black;
+  float: center;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  background-color: #b0b0b0;
+}
+
+/* Style the active/current link */
+.pagination a.active {
+  background-color: #5091bb;
+  color: white;
+}
+
+/* Add a grey background color on mouse-over */
+.pagination a:hover:not(.active) {background-color: #ddd;}
